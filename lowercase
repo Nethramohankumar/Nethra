@@ -44,3 +44,4 @@ static public void main(String[] args)
 String str="abcda";
 int len = smallestsubstr maxDistinctchar(str);
 System.out.println(len);
+}
