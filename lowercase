@@ -1,0 +1,46 @@
+class lowercase
+{
+final static int NO_OF_CHARS = 256;
+static int max distinct char(String str,int n)
+{
+int count[]= new int[NO OF CHARS];
+for (int i =0;i<n;i++;
+{
+count[str.charAt(i)]++;
+}
+int max distinct = 0;
+for (int i=0;i<NO OF CHARS;i++)
+{
+if (count[i] !=0)
+{max distinct++;
+]
+}
+return max distinct;
+static int smallestSubstr maxDistinctchar(String str)
+{
+int n= str.length();
+int max distinct= max distinct char(str,n);
+int minl=n;
+for(int i =0;i,n;i++)
+{
+for(int j=0;j<n;j++)
+{
+String subs=null;
+if(i>j)
+subs = str.substring(i,j);
+else
+subs=str.substring(j,i);
+int  subs length=subs.length();
+int sub distinct char = max distinct char(subs,subs length);
+if(subs length<minl&& max distinct== sub distinct char)
+{
+minl = subs length;
+}
+}
+}
+return minl;
+static public void main(String[] args)
+{
+String str="abcda";
+int len = smallestsubstr maxDistinctchar(str);
+System.out.println(len);
